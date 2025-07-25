@@ -8,10 +8,10 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@EqualsAndHashCode
 public class UsuarioRequestDTO {
-    private Long id;
     private String nome;
     private String email;
     private String documento;
-    private EnderecoRequestDTO enderco;
+    private EnderecoRequestDTO endereco;
 }

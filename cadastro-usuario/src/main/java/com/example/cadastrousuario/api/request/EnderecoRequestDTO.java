@@ -7,8 +7,8 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@EqualsAndHashCode
 public class EnderecoRequestDTO {
-    private Long id;
     private String rua;
     private Long numero;
     private String bairro;

@@ -18,7 +18,7 @@ public class UsuarioConverter {
                 .nome(usuarioDTO.getNome())
                 .documento(usuarioDTO.getDocumento())
                 .email(usuarioDTO.getEmail())
-                .endereco(paraEnderecoEntity(usuarioDTO.getEnderco()))
+                .endereco(paraEnderecoEntity(usuarioDTO.getEndereco()))
                 .build();
 
     }
@@ -36,10 +36,11 @@ public class UsuarioConverter {
 
     public UsuarioResponseDTO paraUsuarioResponseDTO(UsuarioEntity usuarioEntity) {
         return UsuarioResponseDTO.builder()
+                .id(usuarioEntity.getId())
                 .nome(usuarioEntity.getNome())
                 .documento(usuarioEntity.getDocumento())
                 .email(usuarioEntity.getEmail())
-                .enderco(paraEnderecoResponseDTO(usuarioEntity.getEndereco()))
+                .endereco(paraEnderecoResponseDTO(usuarioEntity.getEndereco()))
                 .build();
 
     }

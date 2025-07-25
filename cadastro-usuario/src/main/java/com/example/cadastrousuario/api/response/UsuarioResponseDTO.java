@@ -12,5 +12,5 @@ public class UsuarioResponseDTO {
     private String nome;
     private String email;
     private String documento;
-    private EnderecoResponseDTO enderco;
+    private EnderecoResponseDTO endereco;
 }
